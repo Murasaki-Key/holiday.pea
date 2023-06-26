@@ -8,8 +8,8 @@ import jakarta.persistence.Table;
 import lombok.Getter;
 
 @Entity
-@Table(name = "Users") // 対応するテーブル名
-public class User {
+@Table(name = "Accounts") // 対応するテーブル名
+public class Account {
 
 	// フィールド
 	@Id
@@ -21,24 +21,26 @@ public class User {
 	private String name; // 顧客名
 	
 	@Getter
-	private String email; // メール
-	
-	@Getter
 	private String password; //パスワード
 
 	// コンストラクタ
-	public User() {
+	public Account() {
 		
 	}
 
-	public User(Integer id, String name, String email, String password) {
+	public Account(Integer id, String name, String password) {
 		this.id = id;
 		this.name = name;
-		this.email = email;
 		this.password = password;
 	}
-	public User(String name, String email) {
+	public Account(String name, String password) {
 		this.name = name;
-		this.email = email;
+		this.password = password;
+		
+	}
+
+	public void setName(String names) {
+		// TODO 自動生成されたメソッド・スタブ
+		
 	}
 }
