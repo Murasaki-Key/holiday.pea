@@ -1,4 +1,33 @@
+﻿CREATE DATABASE spring_holiday;
+
+DROP TABLE IF EXISTS account;
+DROP TABLE IF EXISTS eat;
+DROP TABLE IF EXISTS do;
+
+CREATE TABLE account(
+  id SERIAL PRIMARY KEY,
+  name TEXT
+  password TEXT
+);
+
+CREATE TABLE eat(
+  id SERIAL PRIMARY KEY,
+  categoryid INTEGER,
+  categoryid INTEGER,
+  name TEXT
+);
+
+
+CREATE TABLE do(
+  id SERIAL PRIMARY KEY,
+  categoryid INTEGER,
+  categoryid INTEGER,
+  name TEXT
+);
+
+
 INSERT INTO account(name, password) VALUES('test', 'himitu');
+
 
 INSERT INTO eat(categoryid, seasonid, name) VALUES(1,1, 'ステーキ');
 INSERT INTO eat(categoryid, seasonid, name) VALUES(1,2, '焼肉');
