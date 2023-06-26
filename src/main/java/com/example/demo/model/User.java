@@ -1,6 +1,6 @@
 package com.example.demo.model;
 
-public class Account {
+public class User {
 
 	public void setName(String names) {
 		// TODO 自動生成されたメソッド・スタブ
